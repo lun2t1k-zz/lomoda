@@ -2,7 +2,7 @@ const headerCityButton = document.querySelector('.header__city-button');
 
 let hash = location.hash.substring(1);
 
-headerCityButton.textContent = localStorage.getItem('lomoda-location') || 'Ваш город?';
+headerCityButton.textContent = localStorage.getItem('lomoda-location') || `Ваш город?`;
 
 headerCityButton.addEventListener('click', () => {
   const city = prompt('Укажите ваш город');
