@@ -1,6 +1,5 @@
 const headerCityButton = document.querySelector('.header__city-button');
 
-let hash = location.hash.substring(1);
 
 headerCityButton.textContent = localStorage.getItem('lomoda-location') || 'Ваш город?';
 
@@ -10,6 +9,7 @@ headerCityButton.addEventListener('click', () => {
   localStorage.setItem('lomoda-location', city);
 });
 
+let hash = location.hash.substring(1);
 
 // scroll block
 const disableScroll = () => {
